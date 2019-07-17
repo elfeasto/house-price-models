@@ -1,0 +1,28 @@
+Using cross fold validation(CFV) the best single numeric feature for
+simple linear regression is sqft_living.
+
+Everything below is using sqft_living as the only feature(assumed it
+is the best single feature to use)
+
+R squared values are listed below
+
+PARAMETRIC MODELs:
+
+linear = .487
+
+quadratic = .527
+
+best_deg_poly = .538 (deg = 8, found by CFV)
+
+
+NON PARAMETRIC MODELS
+
+K_NN = .499 (k = 35, chosen by CFV)
+
+weighted_10_NN = 0.4765 (weights = 1 / (distance+1) , ad hoc weights)
+## do cross validation for k, not yet done
+
+uniform_kernel = 0.507 (lambda = 150 )
+## 150 is smallest value possible not cross validated as best
+
+gaussian_kernel = 0.5415 (lambda = 5,000, found with CFV )

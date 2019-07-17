@@ -1,0 +1,18 @@
+make a class called an area
+it is either:
+1. A collection of grids
+2. Not in any grid
+
+Parameters:
+1. List of grids
+2. Area inside or outside or these grids
+
+properties:
+all grids should have the same value? no want to assign value
+so should be able to calculate the value of the area
+calculate area by getting mean diff for all houses in the area
+
+
+should have a label for the area eg, high value, or green(green being gud)
+
+

@@ -1,0 +1,27 @@
+1
+UNIFORM KERNEL REGRESSION
+USE CFV to find best distance, note distance can be at a minimum 150
+(see file for logic)
+
+
+2
+MIXED MODEL:
+Try to mix uniform or other kernel regression with bounded support with a
+nearest neighbour model
+
+Bounded kernel regression must have its distance parameter at least a certain
+number, D, say. (This number is the distance between the house in the test set that
+is furthest from any training set house and the house that it is nearest)
+
+If we want to use a number that is below D, d ,say we can use a mix of Kernel and
+K_NN regresion as follows:
+
+for house in test set:
+    if min_dist(house, all training houses) < D:
+        Use K_NN prediction
+    else:
+        Use Kernel prediction with parameter d
+
+
+3
+LOCAL LINEAR REGRESSION
