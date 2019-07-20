@@ -6,6 +6,7 @@ by Colm Gallagher
 import pandas as pd
 import matplotlib.pyplot as plt
 
+data_path = "C:\Python3.5\MyProgram\Pycharm Projects\kingcountyhouseprices\Data\\"
 
 def get_train_test_data():
     dtype_dict = {'bathrooms': float, 'waterfront': int, 'sqft_above': int, 'sqft_living15': float, 'grade': int,
@@ -15,8 +16,8 @@ def get_train_test_data():
                   'sqft_basement': int, 'yr_built': int, 'id': str, 'sqft_lot': int, 'view': int}
 
 
-    train_file = "C:\Python3.5\MyProgram\Pycharm Projects\CourseraHousePrices\Iterative models\Data\kc_house_train_data.csv"
-    test_file = "C:\Python3.5\MyProgram\Pycharm Projects\CourseraHousePrices\Iterative models\Data\kc_house_test_data.csv"
+    train_file = data_path + "kc_house_train_data.csv"
+    test_file = data_path + "kc_house_test_data.csv"
     train_data = pd.read_csv(train_file, dtype=dtype_dict)
     test_data = pd.read_csv(test_file, dtype=dtype_dict)
     return train_data, test_data
@@ -29,9 +30,9 @@ def get_train_valid_test_data():
                   'date': str,
                   'sqft_basement': int, 'yr_built': int, 'id': str, 'sqft_lot': int, 'view': int}
 
-    train_file = "C:\Python3.5\MyProgram\Pycharm Projects\CourseraHousePrices\Iterative models\Data\\training_less_valid.csv"
-    valid_file = "C:\Python3.5\MyProgram\Pycharm Projects\CourseraHousePrices\Iterative models\Data\\validation_data.csv"
-    test_file = "C:\Python3.5\MyProgram\Pycharm Projects\CourseraHousePrices\Iterative models\Data\kc_house_test_data.csv"
+    train_file = data_path + "training_less_valid.csv"
+    valid_file = data_path + "validation_data.csv"
+    test_file =  data_path + "kc_house_test_data.csv"
     train_data = pd.read_csv(train_file,dtype= dtype_dict)
     valid_data = pd.read_csv(valid_file, dtype= dtype_dict)
     test_data = pd.read_csv(test_file, dtype= dtype_dict)

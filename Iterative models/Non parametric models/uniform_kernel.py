@@ -135,7 +135,7 @@ def min_dist_usable_no_valid_data():
 
 
 
-#train_data, valid_data, test_data = get_train_valid_test_data()
+train_data, valid_data, test_data = get_train_valid_test_data()
 
 min_dist_usable_valid_data()
 min_dist_usable_no_valid_data()

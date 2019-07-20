@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8efb5ea5-7151-4a20-aad1-c2d4425f1072" name="Default" comment="" />
+    <list default="true" id="8efb5ea5-7151-4a20-aad1-c2d4425f1072" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Iterative models/Data/inputs_explained.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Iterative models/Data/kc_house_test_data.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Iterative models/Data/kc_house_train_data.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Iterative models/Data/train_valid_split.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Iterative models/Data/training_less_valid.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Iterative models/Data/validation_data.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Iterative models/Non parametric models/one_NN.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Iterative models/Results.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Iterative models/sqft_living_results.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Iterative models/Non parametric models/Gaussian Kernel.py" afterPath="$PROJECT_DIR$/Iterative models/Non parametric models/Gaussian Kernel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Iterative models/Non parametric models/k_NN.py" afterPath="$PROJECT_DIR$/Iterative models/Non parametric models/k_NN.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Iterative models/Non parametric models/uniform_kernel.py" afterPath="$PROJECT_DIR$/Iterative models/Non parametric models/uniform_kernel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Iterative models/temp testing files/temp.py" afterPath="$PROJECT_DIR$/Iterative models/temp testing files/temp.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Iterative models/temp testing files/temp2.py" afterPath="$PROJECT_DIR$/Iterative models/temp testing files/temp2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project_tools.py" afterPath="$PROJECT_DIR$/project_tools.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +30,193 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="project_tools.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project_tools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="726">
+              <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+              <folding>
+                <element signature="e#84#103#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sqft Living Results.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Iterative models/Sqft Living Results.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="17" column="69" lean-forward="false" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weighted_k_NN.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Iterative models/Non parametric models/weighted_k_NN.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-968">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="k_NN.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Iterative models/Non parametric models/k_NN.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#91#1" expanded="false" />
+                <element signature="e#380#584#0" expanded="false" />
+                <element signature="e#629#800#0" expanded="false" />
+                <element signature="e#833#1181#0" expanded="false" />
+                <element signature="e#833#972#1" expanded="false" />
+                <element signature="e#1081#1133#0" expanded="false" />
+                <element signature="e#2552#3168#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="work in progress.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Iterative models/work in progress.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="temp2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Iterative models/temp testing files/temp2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1009">
+              <caret line="106" column="15" lean-forward="false" selection-start-line="106" selection-start-column="15" selection-end-line="106" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#91#1" expanded="false" />
+                <element signature="e#378#583#0" expanded="false" />
+                <element signature="e#628#799#0" expanded="false" />
+                <element signature="e#832#1183#0" expanded="false" />
+                <element signature="e#832#971#1" expanded="false" />
+                <element signature="e#1081#1133#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="polynomial_sqft.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Iterative models/Parametric models/polynomial_sqft.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#193#1" expanded="false" />
+                <element signature="e#445#981#0" expanded="false" />
+                <element signature="e#695#957#0" expanded="false" />
+                <element signature="e#1452#1586#0" expanded="false" />
+                <element signature="e#1687#1727#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gaussian Kernel.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Iterative models/Non parametric models/Gaussian Kernel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="682">
+              <caret line="114" column="44" lean-forward="false" selection-start-line="114" selection-start-column="44" selection-end-line="114" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#80#1" expanded="false" />
+                <element signature="e#232#489#0" expanded="false" />
+                <element signature="e#232#452#1" expanded="false" />
+                <element signature="e#550#972#0" expanded="false" />
+                <element signature="e#550#739#1" expanded="false" />
+                <element signature="e#1023#1348#0" expanded="false" />
+                <element signature="e#1023#1218#1" expanded="false" />
+                <element signature="e#1389#1704#0" expanded="false" />
+                <element signature="e#1389#1573#1" expanded="false" />
+                <element signature="e#1751#1896#1" expanded="false" />
+                <element signature="e#2020#2077#0" expanded="false" />
+                <element signature="e#2168#2855#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="temp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Iterative models/temp testing files/temp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+              <folding>
+                <element signature="e#95#114#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uniform_kernel.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Iterative models/Non parametric models/uniform_kernel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#91#1" expanded="false" />
+                <element signature="e#332#544#0" expanded="false" />
+                <element signature="e#590#782#0" expanded="false" />
+                <element signature="e#833#1087#0" expanded="false" />
+                <element signature="e#1129#2188#0" expanded="false" />
+                <element signature="e#1129#1137#0" expanded="false" />
+                <element signature="e#1406#1509#0" expanded="false" />
+                <element signature="e#1515#2188#1" expanded="false" />
+                <element signature="e#2231#2291#0" expanded="false" />
+                <element signature="e#2341#2430#0" expanded="false" />
+                <element signature="e#2478#2804#0" expanded="false" />
+                <element signature="e#2478#2631#1" expanded="false" />
+                <element signature="e#2845#3725#0" expanded="false" />
+                <element signature="e#2845#2892#0" expanded="false" />
+                <element signature="e#3022#3183#1" expanded="false" />
+                <element signature="e#3188#3236#0" expanded="false" />
+                <element signature="e#3596#3703#0" expanded="false" />
+                <element signature="e#3769#4619#0" expanded="false" />
+                <element signature="e#3769#3816#0" expanded="false" />
+                <element signature="e#3946#4107#1" expanded="false" />
+                <element signature="e#4112#4160#0" expanded="false" />
+                <element signature="e#4502#4598#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/project_tools.py" />
+        <option value="$PROJECT_DIR$/Iterative models/Non parametric models/uniform_kernel.py" />
+        <option value="$PROJECT_DIR$/Iterative models/Non parametric models/Gaussian Kernel.py" />
+        <option value="$PROJECT_DIR$/Iterative models/work in progress.txt" />
+        <option value="$PROJECT_DIR$/Iterative models/temp testing files/temp.py" />
+        <option value="$PROJECT_DIR$/Iterative models/temp testing files/temp2.py" />
+        <option value="$PROJECT_DIR$/Iterative models/Sqft Living Results.txt" />
+        <option value="$PROJECT_DIR$/Iterative models/Non parametric models/k_NN.py" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-139" />
-    <option name="y" value="33" />
-    <option name="width" value="1292" />
-    <option name="height" value="997" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -34,7 +233,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -61,17 +259,156 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kingcountyhouseprices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kingcountyhouseprices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Iterative models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kingcountyhouseprices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kingcountyhouseprices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Iterative models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp testing files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kingcountyhouseprices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kingcountyhouseprices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Iterative models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Non parametric models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Python3.5\MyProgram\Pycharm Projects\kingcountyhouseprices" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Python3.5\MyProgram\Pycharm Projects\kingcountyhouseprices" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.k_NN">
+    <configuration default="false" name="uniform_kernel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Iterative models/Non parametric models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="kingcountyhouseprices" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Iterative models/Non parametric models/uniform_kernel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="temp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Iterative models/temp testing files" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="kingcountyhouseprices" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Iterative models/temp testing files/temp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Gaussian Kernel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Iterative models/Non parametric models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="kingcountyhouseprices" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Iterative models/Non parametric models/Gaussian Kernel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="temp2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Iterative models/temp testing files" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="kingcountyhouseprices" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Iterative models/temp testing files/temp2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="k_NN" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Iterative models/Non parametric models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="kingcountyhouseprices" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Iterative models/Non parametric models/k_NN.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -206,6 +543,22 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.uniform_kernel" />
+      <item index="1" class="java.lang.String" itemvalue="Python.temp" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Gaussian Kernel" />
+      <item index="3" class="java.lang.String" itemvalue="Python.temp2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.k_NN" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.k_NN" />
+        <item index="1" class="java.lang.String" itemvalue="Python.temp2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.temp" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Gaussian Kernel" />
+        <item index="4" class="java.lang.String" itemvalue="Python.uniform_kernel" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -221,26 +574,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-139" y="33" width="1292" height="997" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2507837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -249,5 +602,304 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/project_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding>
+            <element signature="e#84#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Sqft Living Results.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Non parametric models/weighted_k_NN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Non parametric models/k_NN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="81" column="13" lean-forward="false" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#91#1" expanded="false" />
+            <element signature="e#380#584#0" expanded="false" />
+            <element signature="e#629#800#0" expanded="false" />
+            <element signature="e#833#1181#0" expanded="false" />
+            <element signature="e#833#972#1" expanded="false" />
+            <element signature="e#1081#1133#0" expanded="false" />
+            <element signature="e#2552#3168#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/work in progress.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/temp testing files/temp2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="69" column="28" lean-forward="false" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#91#1" expanded="false" />
+            <element signature="e#378#583#0" expanded="false" />
+            <element signature="e#628#799#0" expanded="false" />
+            <element signature="e#832#1183#0" expanded="false" />
+            <element signature="e#832#971#1" expanded="false" />
+            <element signature="e#1081#1133#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Parametric models/polynomial_sqft.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#193#1" expanded="false" />
+            <element signature="e#445#981#0" expanded="false" />
+            <element signature="e#695#957#0" expanded="false" />
+            <element signature="e#1452#1586#0" expanded="false" />
+            <element signature="e#1687#1727#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Non parametric models/Gaussian Kernel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="114" column="44" lean-forward="false" selection-start-line="114" selection-start-column="44" selection-end-line="114" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#80#1" expanded="false" />
+            <element signature="e#232#489#0" expanded="false" />
+            <element signature="e#232#452#1" expanded="false" />
+            <element signature="e#550#972#0" expanded="false" />
+            <element signature="e#550#739#1" expanded="false" />
+            <element signature="e#1023#1348#0" expanded="false" />
+            <element signature="e#1023#1218#1" expanded="false" />
+            <element signature="e#1389#1704#0" expanded="false" />
+            <element signature="e#1389#1573#1" expanded="false" />
+            <element signature="e#1751#1896#1" expanded="false" />
+            <element signature="e#2020#2077#0" expanded="false" />
+            <element signature="e#2168#2855#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/temp testing files/temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1210">
+          <caret line="89" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding>
+            <element signature="e#95#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Non parametric models/uniform_kernel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#91#1" expanded="false" />
+            <element signature="e#332#544#0" expanded="false" />
+            <element signature="e#590#782#0" expanded="false" />
+            <element signature="e#833#1087#0" expanded="false" />
+            <element signature="e#1129#2188#0" expanded="false" />
+            <element signature="e#1129#1137#0" expanded="false" />
+            <element signature="e#1406#1509#0" expanded="false" />
+            <element signature="e#1515#2188#1" expanded="false" />
+            <element signature="e#2231#2291#0" expanded="false" />
+            <element signature="e#2341#2430#0" expanded="false" />
+            <element signature="e#2478#2804#0" expanded="false" />
+            <element signature="e#2478#2631#1" expanded="false" />
+            <element signature="e#2845#3725#0" expanded="false" />
+            <element signature="e#2845#2892#0" expanded="false" />
+            <element signature="e#3022#3183#1" expanded="false" />
+            <element signature="e#3188#3236#0" expanded="false" />
+            <element signature="e#3596#3703#0" expanded="false" />
+            <element signature="e#3769#4619#0" expanded="false" />
+            <element signature="e#3769#3816#0" expanded="false" />
+            <element signature="e#3946#4107#1" expanded="false" />
+            <element signature="e#4112#4160#0" expanded="false" />
+            <element signature="e#4502#4598#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Parametric models/simpleLinear.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Multiple Feature Results.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding>
+            <element signature="e#84#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Non parametric models/one_NN.py" />
+    <entry file="file://$PROJECT_DIR$/Iterative models/Non parametric models/uniform_kernel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#91#1" expanded="false" />
+            <element signature="e#332#544#0" expanded="false" />
+            <element signature="e#590#782#0" expanded="false" />
+            <element signature="e#833#1087#0" expanded="false" />
+            <element signature="e#1129#2188#0" expanded="false" />
+            <element signature="e#1129#1137#0" expanded="false" />
+            <element signature="e#1406#1509#0" expanded="false" />
+            <element signature="e#1515#2188#1" expanded="false" />
+            <element signature="e#2231#2291#0" expanded="false" />
+            <element signature="e#2341#2430#0" expanded="false" />
+            <element signature="e#2478#2804#0" expanded="false" />
+            <element signature="e#2478#2631#1" expanded="false" />
+            <element signature="e#2845#3725#0" expanded="false" />
+            <element signature="e#2845#2892#0" expanded="false" />
+            <element signature="e#3022#3183#1" expanded="false" />
+            <element signature="e#3188#3236#0" expanded="false" />
+            <element signature="e#3596#3703#0" expanded="false" />
+            <element signature="e#3769#4619#0" expanded="false" />
+            <element signature="e#3769#3816#0" expanded="false" />
+            <element signature="e#3946#4107#1" expanded="false" />
+            <element signature="e#4112#4160#0" expanded="false" />
+            <element signature="e#4502#4598#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Non parametric models/Gaussian Kernel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="114" column="44" lean-forward="false" selection-start-line="114" selection-start-column="44" selection-end-line="114" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#80#1" expanded="false" />
+            <element signature="e#232#489#0" expanded="false" />
+            <element signature="e#232#452#1" expanded="false" />
+            <element signature="e#550#972#0" expanded="false" />
+            <element signature="e#550#739#1" expanded="false" />
+            <element signature="e#1023#1348#0" expanded="false" />
+            <element signature="e#1023#1218#1" expanded="false" />
+            <element signature="e#1389#1704#0" expanded="false" />
+            <element signature="e#1389#1573#1" expanded="false" />
+            <element signature="e#1751#1896#1" expanded="false" />
+            <element signature="e#2020#2077#0" expanded="false" />
+            <element signature="e#2168#2855#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/work in progress.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/temp testing files/temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <element signature="e#95#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Parametric models/polynomial_sqft.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#193#1" expanded="false" />
+            <element signature="e#445#981#0" expanded="false" />
+            <element signature="e#695#957#0" expanded="false" />
+            <element signature="e#1452#1586#0" expanded="false" />
+            <element signature="e#1687#1727#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/temp testing files/temp2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1009">
+          <caret line="106" column="15" lean-forward="false" selection-start-line="106" selection-start-column="15" selection-end-line="106" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#91#1" expanded="false" />
+            <element signature="e#378#583#0" expanded="false" />
+            <element signature="e#628#799#0" expanded="false" />
+            <element signature="e#832#1183#0" expanded="false" />
+            <element signature="e#832#971#1" expanded="false" />
+            <element signature="e#1081#1133#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Non parametric models/weighted_k_NN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-968">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Sqft Living Results.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="17" column="69" lean-forward="false" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Non parametric models/k_NN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#91#1" expanded="false" />
+            <element signature="e#380#584#0" expanded="false" />
+            <element signature="e#629#800#0" expanded="false" />
+            <element signature="e#833#1181#0" expanded="false" />
+            <element signature="e#833#972#1" expanded="false" />
+            <element signature="e#1081#1133#0" expanded="false" />
+            <element signature="e#2552#3168#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

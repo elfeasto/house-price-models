@@ -89,31 +89,36 @@ def find_best_lambda(train, k=10):
     """
     Uses cross validation(k = 10) to find the best lambda
     from a given selection of possible values for lambda
+    To save time the results are show below as text
+    The best lambda is return automatically
     :param train:
     :return:
     """
-    # lams = [3000, 4000,5000,6000, 8000]
-    # for lam in lams:
-    #     r_sq = cross_val_lambda(train_data, lam)
-    #     print(lam)
-    #     print(r_sq)
-    #
+    """
+    lams = [3000, 4000,5000,6000, 8000]
+    for lam in lams:
+        r_sq = cross_val_lambda(train_data, lam)
+        print(lam)
+        print(r_sq)
 
-    # cross val r sq for 3000 : 0.5071689782513956
-    # cross val r sq for 4000 : 0.5075554640159469
-    # cross val r sq for 5000 : 0.5076458571518281
-    # cross val r sq for 6000 : 0.5076225153031769
-    # cross val r sq for 8000 : 0.5075099473911580
 
+    #cross val r sq for 3000 : 0.5071689782513956
+    #cross val r sq for 4000 : 0.5075554640159469
+    #cross val r sq for 5000 : 0.5076458571518281
+    #cross val r sq for 6000 : 0.5076225153031769
+    #cross val r sq for 8000 : 0.5075099473911580
+    """
 
     return 5000
 
-
+# load the data
 train_data,test_data = get_train_test_data()
-
+# get the best value for the parameter lambda
 best_lam = find_best_lambda(train_data)
+# evaluate r squared on the test data
 test_r_sq = gauss_r_sq(train_data, test_data, best_lam)
-print(test_r_sq)
+print("Using Gaussian kernel regression with parameter set to 5000.")
+print("This gives a test r squared of", np.round(test_r_sq,5))
 
 
 
