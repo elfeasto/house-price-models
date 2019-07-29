@@ -17,8 +17,8 @@ NON PARAMETRIC MODELS
 K_NN = 0.5016 (k = 25, chosen by CFV)
 However CFV had lesser turning pts at other values, see graph in file
 
-weighted_25_NN = 0.4765 (weights = 1 / (distance+1) , ad hoc weights)
-CFV gave 25 as an approximate value
+weighted_K_NN = 0.4765 (weights = 1 / (distance+1) , ad hoc weights)
+CFV gave K = 25 as an approximate value
 
 
 uniform_kernel = 0.507 (lambda = 150 )

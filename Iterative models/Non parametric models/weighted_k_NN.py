@@ -68,10 +68,10 @@ def find_best_lambda(training):
     :param training:
     :return:
     """
-    possible_ks = [ 200]
+    possible_ks = [200]
     for k in possible_ks:
         r_sq = CFV_r_sq(training, k)
-        print("For k = {}, the value of r sqaured is {}".format(l, np.round(r_sq, 4)))
+        print("For k = {}, the value of r sqaured is {}".format(k, np.round(r_sq, 4)))
     """
     For k = 1, the value of r sqaured is   0.1043
     For k = 5, the value of r sqaured is   0.4272
@@ -80,6 +80,7 @@ def find_best_lambda(training):
     For k = 50, the value of r sqaured is  0.5008
     For k = 75, the value of r sqaured is  0.5013
     For k = 100, the value of r sqaured is 0.5013
+    For k = 200, the value of r sqaured is 0.501
     """
 
 

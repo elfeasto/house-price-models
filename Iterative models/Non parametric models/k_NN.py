@@ -81,7 +81,7 @@ def find_best_k(t_data):
     Cross r squared for k = 45 is 0.50946
     Cross r squared for k = 50 is 0.51041
     """
-    # from results above best k is 35
+    # from results above best k is 25
     return 25
 
 
@@ -117,7 +117,7 @@ def graph_CFV_results():
     plt.show()
 
 
-
+# load the data
 train_data, test_data = get_train_test_data()
 # use cross fold validation to find the best value for k
 k = find_best_k(train_data)
@@ -125,7 +125,7 @@ k = find_best_k(train_data)
 f = lambda x: house_prediction(train_data, x, k)
 test_data["predictions"] = test_data["sqft_living"].map(f)
 # get r squared for this value of k
-test_r_sq = tools.r_squared(test_data,"price", test_data["predictions"])
+test_r_sq = tools.r_squared(test_data, "price", test_data["predictions"])
 print("Test r squared is", test_r_sq)
 
 #graph of k CFV scores

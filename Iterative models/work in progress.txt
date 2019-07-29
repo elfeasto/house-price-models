@@ -1,4 +1,2 @@
-K_NN
-Make a graph of values of k and their CFV score
-Try to do line for values of k that are all continuous and
-scatter plot for values of k that are isolated
+Rewrite k_nn using new general_CFV function
+Rewrite other programs that use CFV with this new function
