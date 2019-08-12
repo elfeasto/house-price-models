@@ -13,24 +13,10 @@ from sklearn.linear_model import LinearRegression
 import tools
 from project_tools import *
 
-def add_poly_features(df_list, feature_name, feature_degree):
-    pass
-    assert type(feature_name) == str
-    # find the overall max(M) and overall min(m)
-    M = max(max(df[feature_name]) for df in df_list)
-    m = min(min(df[feature_name]) for df in df_list)
-    ammended_dfs = []
-    for df in df_list:
-        normed_feature = ( df[feature_name] - m ) /( M - m )
-        normed_feature.name = feature_name + "_normed"
-        poly_df = tools.polynomial_dataframe(normed_feature, feature_degree)
-        df = pd.concat([df, poly_df], axis=1)
-        ammended_dfs.append(df)
-    return ammended_dfs
 
 # highest power we consider:
 MAXPOWER = 15
-#load  data
+# load  data
 train_data, test_data = get_train_test_data()
 
 # add polynomial features to all data
@@ -48,7 +34,7 @@ for deg in range(1, MAXPOWER):
     deg_r_sqs.append(r_sq)
 
 best_deg = np.argmax(deg_r_sqs) + 1
-print("using cross validation the best degree is", best_deg)
+print("Using cross validation the best degree is", best_deg)
 
 
 # find r_sq on test data with best model
@@ -62,7 +48,7 @@ best_model.fit(X_train, y_train)
 X_test = test_data[features]
 y_test = test_data["price"]
 r_sq = best_model.score(X_test, y_test)
-print("R squared with this model is:", np.round(r_sq,3))
+print("Test R squared with this model is:", np.round(r_sq,3))
 
 
 

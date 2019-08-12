@@ -1,7 +1,3 @@
-"""
-ridge regression with adding in dummy variables for zipcode
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -40,16 +36,12 @@ def ridge_CFV(train, features, l2_pen, k):
     avg_r_sq = total_r_sq / k
     return avg_r_sq
 
+# max iterations to get the lasso regression to converge
+MAX_ITERATIONS = 10**6
 
-# load the data
-train_data, test_data = get_train_test_data()
-# add in dummy variable columns for the zipcodes
-train_data_dummies = pd.get_dummies(train_data['zipcode'])
-train_data = pd.concat([train_data, train_data_dummies], axis=1)
-test_data_dummies = pd.get_dummies(test_data['zipcode'])
-test_data = pd.concat([test_data, test_data_dummies], axis=1)
-
-# get a list of numeric features
+#load the data
+train_data, test_data = get_modified_train_test_data()
+#get a list of numeric features
 numeric_features = []
 for feature in train_data.columns:
     if tools.is_numeric(train_data[feature]):
@@ -57,18 +49,18 @@ for feature in train_data.columns:
 # remove irrelevant numeric features
 numeric_features.remove("price")
 numeric_features.remove("id")
-# zipcode is present in dummy variable columns
 numeric_features.remove("zipcode")
 numeric_features.remove("long")
 numeric_features.remove("lat")
 #numeric_features.remove("yr_built")
 
 features = numeric_features
-
+print(features)
 """
-find the best l2 penalty
-done by finding r squared values for different l2 penalties
-then select the l2 penalty that gives the highest r squared value
+finding the best l2 penalty is done by using cross fold validation to
+r squared values for different l2 penalties.
+Then the l2 penalty that gives the highest r squared value
+is selected as the best penalty to be used for the overall model
 """
 
 # choose a value of k for k-fold cross validation
@@ -77,28 +69,23 @@ k = 50
 my_sets = tools.train_valid_k_fold_sets(train_data,k)
 # find the r squared values for different l2 penalties
 # then select the l2 penalty that gives the highest r squared value
-l2_pens = [0.001,0.01, 0.02,0.03,0.05, 0.1, 0.15]
+l2_pens = [.001,0.05,.01,0.02,.1, .5]
 best_l2_value = None
 best_cross_r_sq = -np.inf
 for l2_pen in l2_pens:
-    cross_r_sq = ridge_CFV(train_data, features, l2_pen, k)
-    #print("For l2 penalty {}, r squared is {}".format(l2_pen, np.round( cross_r_sq, 5)))
+    cross_r_sq = ridge_CFV(train_data, features, l2_pen,k)
+    print("For l2 penalty {}, r squared is {}".format(l2_pen, np.round( cross_r_sq, 5)))
     if cross_r_sq > best_cross_r_sq:
         best_cross_r_sq = cross_r_sq
         best_l2_value = l2_pen
 print()
 print("The best value for l2 is", best_l2_value)
-print("This gives a CFV r squared of", np.round(best_cross_r_sq,5))
-best_model = Ridge(alpha=best_l2_value, normalize=True)
+# create a model using the best l2 value
+best_model = Ridge(alpha=best_l2_value, normalize=True, max_iter=MAX_ITERATIONS)
+# fir the model using the training data
 best_model.fit(train_data[features], train_data["price"])
-# show_regression_coeffs(numeric_features, best_model)
 
-# find test r squared
+# find test r squared for the model
 test_r_sq = best_model.score(test_data[features], test_data["price"])
 print()
 print("Test r squared is", np.round(test_r_sq, 5))
-print()
-
-
-
-

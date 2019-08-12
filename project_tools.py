@@ -6,7 +6,8 @@ by Colm Gallagher
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data_path = "C:\Python3.5\MyProgram\Pycharm Projects\kingcountyhouseprices\Data\\"
+data_path = "C:\Python3.5\MyProgram\Pycharm Projects\kingcountyhouseprices\Data\original_data\\"
+engineered_data_path = "C:\Python3.5\MyProgram\Pycharm Projects\kingcountyhouseprices\Data\engineered_data\\"
 
 def get_train_test_data():
     dtype_dict = {'bathrooms': float, 'waterfront': int, 'sqft_above': int, 'sqft_living15': float, 'grade': int,
@@ -37,6 +38,22 @@ def get_train_valid_test_data():
     valid_data = pd.read_csv(valid_file, dtype= dtype_dict)
     test_data = pd.read_csv(test_file, dtype= dtype_dict)
     return train_data, valid_data, test_data
+
+
+def get_modified_train_test_data():
+    dtype_dict = {'bathrooms': float, 'waterfront': int, 'sqft_above': int, 'sqft_living15': float, 'grade': int,
+                  'yr_renovated': int, 'price': float, 'bedrooms': float, 'zipcode': str, 'long': float,
+                  'sqft_lot15': float, 'sqft_living': float, 'floors': float, 'condition': int, 'lat': float,
+                  'date': str, 'sqft_basement': int, 'yr_built': int, 'id': str, 'sqft_lot': int, 'view': int,
+                  'house_area_reating':float}
+
+
+    train_file = engineered_data_path + "engineered_train_data.csv"
+    test_file = engineered_data_path + "engineered_test_data.csv"
+    train_data = pd.read_csv(train_file, dtype=dtype_dict)
+    test_data = pd.read_csv(test_file, dtype=dtype_dict)
+    return train_data, test_data
+
 
 
 def get_quantile_values(x, num_quantiles):

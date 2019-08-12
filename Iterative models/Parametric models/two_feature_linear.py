@@ -10,14 +10,14 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 import tools
 import itertools
-
+from project_tools import *
 
 def findsubsets(set, size):
     return list(itertools.combinations(set, size))
 
 
 # load train data
-train_data = pd.read_csv("kc_house_train_data.csv")
+train_data, test_data = get_train_test_data()
 # get all numeric features(excluding price!)
 all_features = train_data.columns
 numeric_features = [feature for feature in all_features
@@ -53,8 +53,7 @@ train_y = train_data["price"]
 model = LinearRegression()
 model.fit(train_X,train_y)
 print(model.intercept_, model.coef_)
-#load test data
-test_data = pd.read_csv("kc_house_test_data.csv")
+
 #test data using test data
 test_X = test_data[best_features]
 test_y = test_data["price"]

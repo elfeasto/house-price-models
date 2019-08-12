@@ -1,7 +1,3 @@
-"""
-ridge regression with adding in dummy variables for zipcode
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -41,15 +37,17 @@ def ridge_CFV(train, features, l2_pen, k):
     return avg_r_sq
 
 
-# load the data
+#load the data
 train_data, test_data = get_train_test_data()
-# add in dummy variable columns for the zipcodes
+#train_data, test_data = preprocess_data(train_data, test_data)
 train_data_dummies = pd.get_dummies(train_data['zipcode'])
 train_data = pd.concat([train_data, train_data_dummies], axis=1)
+
 test_data_dummies = pd.get_dummies(test_data['zipcode'])
 test_data = pd.concat([test_data, test_data_dummies], axis=1)
+print(train_data.columns)
 
-# get a list of numeric features
+#get a list of numeric features
 numeric_features = []
 for feature in train_data.columns:
     if tools.is_numeric(train_data[feature]):
@@ -57,7 +55,6 @@ for feature in train_data.columns:
 # remove irrelevant numeric features
 numeric_features.remove("price")
 numeric_features.remove("id")
-# zipcode is present in dummy variable columns
 numeric_features.remove("zipcode")
 numeric_features.remove("long")
 numeric_features.remove("lat")
@@ -88,7 +85,7 @@ for l2_pen in l2_pens:
         best_l2_value = l2_pen
 print()
 print("The best value for l2 is", best_l2_value)
-print("This gives a CFV r squared of", np.round(best_cross_r_sq,5))
+print("This gives an r squared  of", np.round(best_cross_r_sq,5))
 best_model = Ridge(alpha=best_l2_value, normalize=True)
 best_model.fit(train_data[features], train_data["price"])
 # show_regression_coeffs(numeric_features, best_model)
@@ -99,6 +96,20 @@ print()
 print("Test r squared is", np.round(test_r_sq, 5))
 print()
 
-
+# average error!?!?!?!
+test_data['prediction'] = best_model.predict(test_data[features])
+test_data['prediction'] = test_data['prediction'].map(np.round)
+test_data['prediction'] = test_data['prediction'].map(float)
+print(test_data[['price','prediction']])
+relevant = test_data[['price','prediction']]
+print(relevant.iloc[:20])
+test_data['percentage error'] = test_data['prediction'] - test_data['price']
+f = lambda x: np.abs(x)
+test_data['percentage error'] = test_data['percentage error'].map(f)
+test_data['percentage error'] = test_data['percentage error'] / test_data['price']
+g = lambda x: x*100
+test_data['percentage error'] = test_data['percentage error'].map(g)
+avg_error = test_data['percentage error'].mean()
+print("average prediction error is", avg_error)
 
 

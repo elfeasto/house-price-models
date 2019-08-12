@@ -9,15 +9,12 @@ from sklearn.linear_model import Ridge
 import tools
 from project_tools import *
 
+
 def preprocess_data(train, test):
-    min_year_built = min(train["yr_built"].min(), test["yr_built"].min())
-    min_year_renovated = min(train["yr_renovated"].min(), test["yr_renovated"].min())
-
-    train["yr_built"] = train["yr_built"] - min_year_built
-    test["yr_built"] = test["yr_built"] - min_year_built
-
-    train["yr_renovated"] = train["yr_renovated"] - min_year_renovated
-    test["yr_renovated"] = test["yr_renovated"] - min_year_renovated
+    train = add_yr_built_dummies(train)
+    train = add_zipcode_dummies(train)
+    test = add_yr_built_dummies(test)
+    test = add_zipcode_dummies(test)
 
     return train, test
 
@@ -41,13 +38,35 @@ def ridge_CFV(train, features, l2_pen, k):
     return avg_r_sq
 
 
+def add_yr_built_dummies(data):
+    def f(x):
+        if x < 1950:
+            return 0
+        elif x < 1975:
+            return 1
+        elif x < 1997:
+            return 2
+        else:
+            return 3
+
+    data['yr_built'] = data['yr_built'].map(f)
+
+    yr_built_dummies = pd.get_dummies(data['yr_built'], prefix='yr_built_cat')
+    data = pd.concat([data, yr_built_dummies], axis=1)
+    data.drop(columns='yr_built', inplace=True)
+    return  data
+
+
+def add_zipcode_dummies(data):
+    zipcode_dummies = pd.get_dummies(data['zipcode'], prefix='zipcode')
+    data = pd.concat([data, zipcode_dummies], axis=1)
+    data.drop(columns = 'zipcode', inplace = True)
+    return data
+
 # load the data
 train_data, test_data = get_train_test_data()
 # add in dummy variable columns for the zipcodes
-train_data_dummies = pd.get_dummies(train_data['zipcode'])
-train_data = pd.concat([train_data, train_data_dummies], axis=1)
-test_data_dummies = pd.get_dummies(test_data['zipcode'])
-test_data = pd.concat([test_data, test_data_dummies], axis=1)
+train_data, test_data= preprocess_data(train_data, test_data)
 
 # get a list of numeric features
 numeric_features = []
@@ -57,11 +76,9 @@ for feature in train_data.columns:
 # remove irrelevant numeric features
 numeric_features.remove("price")
 numeric_features.remove("id")
-# zipcode is present in dummy variable columns
-numeric_features.remove("zipcode")
 numeric_features.remove("long")
 numeric_features.remove("lat")
-#numeric_features.remove("yr_built")
+numeric_features.remove('sqft_living') # have sqft_above and sqft_below
 
 features = numeric_features
 
@@ -91,9 +108,9 @@ print("The best value for l2 is", best_l2_value)
 print("This gives a CFV r squared of", np.round(best_cross_r_sq,5))
 best_model = Ridge(alpha=best_l2_value, normalize=True)
 best_model.fit(train_data[features], train_data["price"])
-# show_regression_coeffs(numeric_features, best_model)
+# show_regression_coeffs(best_model, features)
 
-# find test r squared
+#find test r squared
 test_r_sq = best_model.score(test_data[features], test_data["price"])
 print()
 print("Test r squared is", np.round(test_r_sq, 5))

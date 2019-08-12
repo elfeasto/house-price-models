@@ -180,6 +180,15 @@ def get_poly_col_names(data, feature_name, normed = False):
     return poly_cols
 
 
+def is_numeric(series):
+    for elt in series:
+        try:
+            float(elt)
+        except:
+            return False
+    return True
+
+
 def linear_k_fold_cross_validation(k, data, features_list, target):
     """
     Return the average r squared
@@ -190,7 +199,6 @@ def linear_k_fold_cross_validation(k, data, features_list, target):
     :return:
     """
     assert type(target) == str
-    pass
     n = len(data)
     # get the start and end indices for the validation sets
     indices = []
@@ -265,16 +273,32 @@ def ridge_k_fold_cross_validation(k, l2_penalty, data, features_list, target):
     return avg_R_sq
 
 
-def is_numeric(series):
-    for elt in series:
-        try:
-            float(elt)
-        except:
-            return False
-    return True
+def linear_CFV(data, target_column, features_list, k =10):
+    """
+    Return the average r squared
+    :param k: number of sets to split data into(num repitions of the process)
+    :param data:
+    :param features_list:
+    :param target:
+    :return:
+    """
+    assert type(target_column) == str
+    # need to make a prediction function
+
+    """
+        :param prediction_function: maps (training data, testing data, k)
+        to a prediction series of testing data
+    """
+    def linear_predicion(training, testing, k):
+        lm = LinearRegression()
+        lm.fit(training[features_list], training[target_column])
+        testing_predictions = lm.predict(testing[features_list])
+        return testing_predictions
+
+    avg_valid_r_sq = general_CFV()
 
 
-def train_valid_k_fold_sets(data, k):
+def train_valid_k_fold_sets(data, num_splits):
     """
 
     :param data:
@@ -283,6 +307,7 @@ def train_valid_k_fold_sets(data, k):
     """
 
     n = len(data)
+    k = num_splits
     # get the start and end indices for the validation sets
     indices = []
     for i in range(k):
@@ -303,17 +328,18 @@ def train_valid_k_fold_sets(data, k):
     return ans_sets
 
 
-def general_CFV(data, prediction_function, target_column, param, k=10):
+def general_CFV(data, prediction_function, target_column, param, num_splits):
     """
 
     :param data: data to perform CFV on
-    :param prediction_function: prediction_function: maps (training data, testing data, k)
+    :param prediction_function: maps (training data, testing data, k)
            to a prediction series of testing data
     :param target_column: column of df that is being predicted
     :param param: parameter of the model being used
     :param k: k to be used in k fold CFV
     :return: CFV r squared
     """
+    k = num_splits
     train_valid_splits = train_valid_k_fold_sets(data, k)
 
     total_r_sq = 0

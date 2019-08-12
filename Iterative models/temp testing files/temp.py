@@ -1,90 +1,142 @@
 """
-performs weighted k nearest neighbour method on the houses using sqft_living as the distance
+ridge regression with adding in dummy variables for zipcode
 """
-
-
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import Ridge
 import tools
 from project_tools import *
 
 
-def house_prediction(train_d, house_sqft, k):
-    # need to find k nearest houses
-    # calculate distance between this house and all houses in train_d
-    train_d["distance"] = np.abs(train_d["sqft_living"] - house_sqft)
-    # now we can get these nearest houses
-    k_nearest_houses = train_d.nsmallest(k, "distance")
-    # using these houses and their distance, weights are calculated
-    k_nearest_houses["weight"] = k_nearest_houses["distance"].map(lambda x: (1 / (x + 1)))
-    # now the estimated price is calculated
-
-    # zipped list of price and weights for convenience
-    price_and_weights = zip(k_nearest_houses["price"], k_nearest_houses["weight"])
-    estimated_price = 0
-    for price, weight in price_and_weights:
-        estimated_price += price * weight
-    estimated_price /= k_nearest_houses["weight"].sum()
-    return estimated_price
 
 
-def data_predictions(training, testing, lam):
-    """
-    Get weighted k_NN predictions for a testing set based on
-    the training set
-    :param training:
-    :param testing:
-    :return:
-    """
-    f = lambda sqft: house_prediction(training, sqft, lam)
-    predictions = testing["sqft_living"].map(f)
-    return predictions
+
+def show_regression_coeffs(model, features):
+    print("Intercept is", model.intercept_)
+    zipped = zip(features, model.coef_)
+    for feat, coef in zipped:
+        print(feat, np.round(coef, 3))
 
 
-def CFV_r_sq(data, lam, k=10):
-    """
-    Does (k = 10) fold cross validation of the data
-    :param training:
-    :return:
-    """
-    my_sets = tools.train_valid_k_fold_sets(data, k)
+def ridge_CFV(train, features, l2_pen, k):
+    my_sets = tools.train_valid_k_fold_sets(train, k)
     total_r_sq = 0
     for t, v in my_sets:
-        v_predictions = data_predictions(t, v, lam)
-        v_r_sq = tools.r_squared(v, "price", v_predictions)
-        total_r_sq += v_r_sq
+        r_model = Ridge(alpha=l2_pen, normalize=True)
+        r_model.fit(t[features], t["price"])
+        r_sq = r_model.score(v[features], v["price"])
+        total_r_sq += r_sq
     avg_r_sq = total_r_sq / k
     return avg_r_sq
 
 
-def find_best_lambda(training):
-    """
-    checks the CFV r squared score for various values
-    of lambda and returns the best one
-    :param training:
-    :return:
-    """
-    possible_ks = [200]
-    for k in possible_ks:
-        r_sq = CFV_r_sq(training, k)
-        print("For k = {}, the value of r sqaured is {}".format(k, np.round(r_sq, 4)))
-    """
-    For k = 1, the value of r sqaured is   0.1043
-    For k = 5, the value of r sqaured is   0.4272
-    For k = 10, the value of r sqaured is  0.4697
-    For k = 30, the value of r sqaured is  0.496
-    For k = 50, the value of r sqaured is  0.5008
-    For k = 75, the value of r sqaured is  0.5013
-    For k = 100, the value of r sqaured is 0.5013
-    """
+def add_yr_built_dummies(data):
+    def f(x):
+        if x < 1950:
+            return 0
+        elif x < 1975:
+            return 1
+        elif x < 1997:
+            return 2
+        else:
+            return 3
+
+    data['yr_built'] = data['yr_built'].map(f)
+
+    yr_built_dummies = pd.get_dummies(data['yr_built'], prefix='yr_built_cat')
+    data = pd.concat([data, yr_built_dummies], axis=1)
+    data.drop(columns='yr_built', inplace=True)
+    return  data
 
 
+def add_zipcode_dummies(data):
+    zipcode_dummies = pd.get_dummies(data['zipcode'], prefix='zipcode')
+    data = pd.concat([data, zipcode_dummies], axis=1)
+    data.drop(columns = 'zipcode', inplace = True)
+    return data
+
+
+def add_binary_renovated_dummies(data):
+    f = lambda x:0 if x==0 else 1
+    data['was_renovated'] = data['yr_renovated'].map(f)
+    data.drop(columns = 'yr_renovated', inplace = True)
+    return data
+
+
+def add_all_dummies(data):
+    data = add_yr_built_dummies(data)
+    data = add_zipcode_dummies(data)
+    data = add_binary_renovated_dummies(data)
+    return data
+
+
+def preprocess_data(train, test):
+    train = add_all_dummies(train)
+    test = add_all_dummies(test)
+    return train, test
+
+# load the data
 train_data, test_data = get_train_test_data()
-train_data  = train_data
+# add in dummy variable columns for the zipcodes
+# add in dummy variables for year built
+# add in dummy variables for renovated or not
+train_data, test_data= preprocess_data(train_data, test_data)
 
 
-find_best_lambda(train_data)
+
+# get a list of numeric features
+numeric_features = []
+for feature in train_data.columns:
+    if tools.is_numeric(train_data[feature]):
+        numeric_features.append(feature)
+# remove irrelevant numeric features
+numeric_features.remove("price")
+numeric_features.remove("id")
+numeric_features.remove("long")
+numeric_features.remove("lat")
+numeric_features.remove('sqft_living') # have sqft_above and sqft_below
+
+features = numeric_features
+
+"""
+find the best l2 penalty
+done by finding r squared values for different l2 penalties
+then select the l2 penalty that gives the highest r squared value
+"""
+
+# choose a value of k for k-fold cross validation
+k = 50
+# set consisting of (test,valid) pairs for k fold validation
+my_sets = tools.train_valid_k_fold_sets(train_data,k)
+# find the r squared values for different l2 penalties
+# then select the l2 penalty that gives the highest r squared value
+l2_pens = [0.001,0.01, 0.02,0.03,0.05, 0.1, 0.15]
+best_l2_value = None
+best_cross_r_sq = -np.inf
+for l2_pen in l2_pens:
+    cross_r_sq = ridge_CFV(train_data, features, l2_pen, k)
+    #print("For l2 penalty {}, r squared is {}".format(l2_pen, np.round( cross_r_sq, 5)))
+    if cross_r_sq > best_cross_r_sq:
+        best_cross_r_sq = cross_r_sq
+        best_l2_value = l2_pen
+print()
+print("The best value for l2 is", best_l2_value)
+print("This gives a CFV r squared of", np.round(best_cross_r_sq,5))
+best_model = Ridge(alpha=best_l2_value, normalize=True)
+best_model.fit(train_data[features], train_data["price"])
+# show_regression_coeffs(best_model, features)
+
+# find test r squared
+test_r_sq = best_model.score(test_data[features], test_data["price"])
+print()
+print("Test r squared is", np.round(test_r_sq, 5))
+print()
+
+
+
+#  0.64743
+#  0.80634
+# test r squared is: 0.81122
+

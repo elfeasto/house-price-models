@@ -144,18 +144,17 @@ areas = make_areas()
 #add in area rating based on diff
 for area in areas:
     area.add_area_diff_rating(train_data)
-#add a column to our data representing the estimated
-#price increase of living in different areas
-train_data["house_area_cat"] = area_rating_series(train_data,areas)
-test_data["house_area_cat"] = area_rating_series(test_data, areas)
-#get linear regression model using new area category #
-features = ["sqft_living", "house_area_cat"]
-lm = LinearRegression()
-lm.fit(train_data[features], train_data["price"])
-#find the test r squared
-test_r_sq = lm.score(train_data[features], train_data["price"])
-print("Test r squared is", test_r_sq)
+# add a column to our data representing the estimated
+# price increase of living in different areas
+train_data["house_area_rating"] = area_rating_series(train_data,areas)
+test_data["house_area_rating"] = area_rating_series(test_data, areas)
 
+
+train_data.drop(columns=['diff'], inplace=True)
+# save modified data
+data_path = "C:\Python3.5\MyProgram\Pycharm Projects\kingcountyhouseprices\Data\engineered_data\\"
+train_data.to_csv(data_path + "engineered_train_data.csv", index=False)
+test_data.to_csv(data_path + "engineered_test_data.csv", index=False)
 
 ##########################
 # debugging area #########

@@ -23,6 +23,7 @@ sqft_model.fit(X, y)
 X = tools.get_features_matrix(test_data, features)
 y = test_data["price"]
 test_r_sq = sqft_model.score(X,y)
+print("Using simple linear regression on sqft_living we get")
 print("Test r squared is:", np.round(test_r_sq,4))
 
 
