@@ -1,7 +1,19 @@
 import matplotlib
 
+
 class Area:
-    def __init__(self, grids, interior=True, rating = None, color = None):
+    """
+    An area consists of a collection of grids
+    The area is either
+    (a) interior, if it represents all points
+    inside any of the grids
+    (b) exterior, if it represents all points
+    outside any of the grids
+
+    A rating value is assigned to each area to represent the estimated
+    price increase(or decrease) associated with living in this area
+    """
+    def __init__(self, grids, interior=True, rating=None, color=None):
         self.grids = grids
         self.rating = rating
         self.interior = interior
@@ -9,7 +21,6 @@ class Area:
 
     def contains_house(self, house):
         """
-
         :param data(df): houses with long and lat attributes
         :return(bool): Whether house is in the area
         """

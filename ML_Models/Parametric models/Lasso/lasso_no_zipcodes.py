@@ -1,3 +1,7 @@
+"""
+Lassoo regression with adding in dummy variables for zipcode
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -71,7 +75,7 @@ k = 50
 my_sets = tools.train_valid_k_fold_sets(train_data,k)
 # find the r squared values for different l2 penalties
 # then select the l2 penalty that gives the highest r squared value
-l2_pens = [10, 40, 100]
+l2_pens = [5,10, 40, 100]
 best_l2_value = None
 best_cross_r_sq = -np.inf
 for l2_pen in l2_pens:

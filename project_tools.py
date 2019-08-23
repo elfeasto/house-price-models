@@ -55,7 +55,6 @@ def get_modified_train_test_data():
     return train_data, test_data
 
 
-
 def get_quantile_values(x, num_quantiles):
     """
     Enter in an array of values x and a number of quantiles to

@@ -1,6 +1,0 @@
-my k_nn vs scilearn k_nn:
-Get different results somtimes,
-appears to be due to slelction of which house if multiple nearest neigbours possible
-
-mine goes from top down to find first nearest
-theirs goes bottom up?

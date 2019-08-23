@@ -1,8 +1,7 @@
 """
 Finds the best numeric feature for simple linear regression
-checks models with one number feature
+checks models with one numeric feature and
 finds the best one using cross fold validation
-
 """
 
 import pandas as pd

@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression,Ridge
 
+
 def pred_r_squared(data, target_col_name, features_list):
     """
     Predicted r squared is got by removing a sample(row) fitting the model
@@ -92,9 +93,10 @@ def normalise(series):
 
 def normalise_wrt(target_series, reference_series):
     """
-    normalises the target series with respect to the reference series
+    Normalise the target series with respect to the reference series
     IE uses the min(m) and max(M) of the reference series and then translates
-    the target series (x - m)/ (M - m)
+    the each element, x, of the target series as follows:
+     x ->(x - m)/ (M - m)
     :param target_series:
     :param reference_series:
     :return:
@@ -300,7 +302,7 @@ def linear_CFV(data, target_column, features_list, k =10):
 
 def train_valid_k_fold_sets(data, num_splits):
     """
-
+    Helper function for the general_CFV function
     :param data:
     :param k:
     :return: list of (train,valid) tuples
@@ -328,18 +330,18 @@ def train_valid_k_fold_sets(data, num_splits):
     return ans_sets
 
 
-def general_CFV(data, prediction_function, target_column, param, num_splits):
+def general_CFV(data, prediction_function, target_column, param, k):
     """
 
     :param data: data to perform CFV on
     :param prediction_function: maps (training data, testing data, k)
            to a prediction series of testing data
-    :param target_column: column of df that is being predicted
-    :param param: parameter of the model being used
-    :param k: k to be used in k fold CFV
+    :param target_column: column of the dataframe that is being predicted
+    :param param: parameter of the ML model being used
+    :param k: the value of k to be used in the k-fold regression
     :return: CFV r squared
     """
-    k = num_splits
+
     train_valid_splits = train_valid_k_fold_sets(data, k)
 
     total_r_sq = 0

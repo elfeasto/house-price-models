@@ -1,0 +1,19 @@
+RIDGE REGRESSION:
+
+With no dummy variables for zipcode
+Test r squared is 0.64104
+
+With area rating feature:
+Test r squared is 0.75135
+
+Adding in dummy variables for zipcode
+Test r squared is 0.81078
+
+LASSO REGRESSION:
+
+With no dummy variables for zipcode
+Test r squared is 0.63897
+
+
+Adding in dummy variables for zipcode
+Test r squared is 0.81012
