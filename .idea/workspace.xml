@@ -2,42 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8efb5ea5-7151-4a20-aad1-c2d4425f1072" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Results/Multiple Feature Results.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Iterative models/Multiple Feature Results.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Iterative models/Parametric models/engineered_data_ridge.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Iterative models/Parametric models/simpleLinear.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Iterative models/Parametric models/testing_lasso.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Iterative models/Parametric models/testing_ridge.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/Investigative models/Ridge_vs_Multiple_Linear.py" afterPath="$PROJECT_DIR$/ML_Models/Investigative models/Ridge_vs_Multiple_Linear.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/Investigative models/area_lot_regression.py" afterPath="$PROJECT_DIR$/ML_Models/Investigative models/area_lot_regression.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/Investigative models/sqft_15_meaning.py" afterPath="$PROJECT_DIR$/ML_Models/Investigative models/sqft_15_meaning.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/Investigative models/sqft_equivalence.py" afterPath="$PROJECT_DIR$/ML_Models/Investigative models/sqft_equivalence.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/Non parametric models/CFV_function.py" afterPath="$PROJECT_DIR$/ML_Models/Non parametric models/CFV_function.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/Non parametric models/Gaussian Kernel.py" afterPath="$PROJECT_DIR$/ML_Models/Non parametric models/Gaussian Kernel.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/Non parametric models/k_NN.py" afterPath="$PROJECT_DIR$/ML_Models/Non parametric models/k_NN.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/Non parametric models/uniform_kernel.py" afterPath="$PROJECT_DIR$/ML_Models/Non parametric models/uniform_kernel.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/Non parametric models/weighted_k_NN.py" afterPath="$PROJECT_DIR$/ML_Models/Non parametric models/weighted_k_NN.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/Parametric models/SimpleLinearBestFeature.py" afterPath="$PROJECT_DIR$/ML_Models/Parametric models/Simple Linear/SimpleLinearBestFeature.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/Parametric models/polynomial_sqft.py" afterPath="$PROJECT_DIR$/ML_Models/Parametric models/Multiple Linear/polynomial_sqft.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/Parametric models/quadratic_plot.py" afterPath="$PROJECT_DIR$/ML_Models/Parametric models/Multiple Linear/quadratic_plot.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/Parametric models/quadratic_sqft.py" afterPath="$PROJECT_DIR$/ML_Models/Parametric models/Multiple Linear/quadratic_sqft.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/Parametric models/two_feature_linear.py" afterPath="$PROJECT_DIR$/ML_Models/Parametric models/Multiple Linear/two_feature_linear.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/Sqft Living Results.txt" afterPath="$PROJECT_DIR$/Results/Sqft Living Results.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/ToDo.txt" afterPath="$PROJECT_DIR$/Notes/ToDo.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/notes.txt" afterPath="$PROJECT_DIR$/Notes/notes.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/temp testing files/avg_error_test.py" afterPath="$PROJECT_DIR$/ML_Models/temp testing files/avg_error_test.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/temp testing files/ideas.txt" afterPath="$PROJECT_DIR$/ML_Models/temp testing files/ideas.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/temp testing files/rdige_with_dummies.py" afterPath="$PROJECT_DIR$/ML_Models/temp testing files/rdige_with_dummies.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/temp testing files/sklearn_k_nn.py" afterPath="$PROJECT_DIR$/ML_Models/temp testing files/sklearn_k_nn.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/temp testing files/temp.py" afterPath="$PROJECT_DIR$/ML_Models/temp testing files/temp.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/temp testing files/temp2.py" afterPath="$PROJECT_DIR$/ML_Models/temp testing files/temp2.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/temp testing files/temp3.py" afterPath="$PROJECT_DIR$/ML_Models/temp testing files/temp3.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/temp testing files/testing_their_mine_k_nn.py" afterPath="$PROJECT_DIR$/ML_Models/temp testing files/testing_their_mine_k_nn.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Iterative models/work in progress.txt" afterPath="$PROJECT_DIR$/Notes/work in progress.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ML_Models/temp testing files/ideas.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ML_Models/temp testing files/rdige_with_dummies.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ML_Models/temp testing files/sklearn_k_nn.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ML_Models/temp testing files/testing_their_mine_k_nn.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes.py" afterPath="$PROJECT_DIR$/classes.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project_tools.py" afterPath="$PROJECT_DIR$/project_tools.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools.py" afterPath="$PROJECT_DIR$/tools.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ML_Models/temp testing files/temp.py" afterPath="$PROJECT_DIR$/ML_Models/temp testing files/temp.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,10 +22,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tools.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tools.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
+            <state relative-caret-position="686">
               <caret line="332" column="68" lean-forward="false" selection-start-line="332" selection-start-column="68" selection-end-line="332" selection-end-column="68" />
               <folding>
                 <element signature="e#0#61#1" expanded="false" />
@@ -112,6 +82,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="temp.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ML_Models/temp testing files/temp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+              <folding>
+                <element signature="e#69#88#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -158,6 +140,7 @@
         <option value="$PROJECT_DIR$/Iterative models/Parametric models/Ridge/ridge_no_zipcode_dummies.py" />
         <option value="$PROJECT_DIR$/Iterative models/Multiple Feature Results.txt" />
         <option value="$PROJECT_DIR$/Iterative models/notes.txt" />
+        <option value="$PROJECT_DIR$/ML_Models/temp testing files/temp.py" />
       </list>
     </option>
   </component>
@@ -183,6 +166,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -195,9 +179,80 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kingcountyhouseprices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kingcountyhouseprices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ML_Models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp testing files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kingcountyhouseprices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kingcountyhouseprices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ML_Models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Parametric models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kingcountyhouseprices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kingcountyhouseprices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ML_Models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Parametric models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ridge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kingcountyhouseprices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kingcountyhouseprices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ML_Models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="RecentsManager">
@@ -216,24 +271,7 @@
       <recent name="C:\Python3.5\MyProgram\Pycharm Projects\kingcountyhouseprices\Iterative models\Parametric models\Ridge" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ridge_area_rating">
-    <configuration default="false" name="simpleLinear" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Iterative models/Parametric models/Simple Linear" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kingcountyhouseprices" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Iterative models/Parametric models/Simple Linear/simpleLinear.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.temp">
     <configuration default="false" name="testing_ridge (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -298,6 +336,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="kingcountyhouseprices" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML_Models/Parametric models/Ridge/ridge_area_rating.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="temp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ML_Models/temp testing files" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="kingcountyhouseprices" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML_Models/temp testing files/temp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -437,19 +492,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.simpleLinear" />
-      <item index="1" class="java.lang.String" itemvalue="Python.testing_ridge (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ridge_no_zipcode_dummies" />
-      <item index="3" class="java.lang.String" itemvalue="Python.engineered_data_ridge" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ridge_area_rating" />
+      <item index="0" class="java.lang.String" itemvalue="Python.testing_ridge (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ridge_no_zipcode_dummies" />
+      <item index="2" class="java.lang.String" itemvalue="Python.engineered_data_ridge" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ridge_area_rating" />
+      <item index="4" class="java.lang.String" itemvalue="Python.temp" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ridge_area_rating" />
-        <item index="1" class="java.lang.String" itemvalue="Python.engineered_data_ridge" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ridge_no_zipcode_dummies" />
-        <item index="3" class="java.lang.String" itemvalue="Python.testing_ridge (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.simpleLinear" />
+        <item index="0" class="java.lang.String" itemvalue="Python.temp" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ridge_area_rating" />
+        <item index="2" class="java.lang.String" itemvalue="Python.engineered_data_ridge" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ridge_no_zipcode_dummies" />
+        <item index="4" class="java.lang.String" itemvalue="Python.testing_ridge (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -468,14 +523,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1292" height="1000" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33370787" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33370787" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -516,20 +571,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ML_Models/Non parametric models/Gaussian Kernel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="114" column="44" lean-forward="false" selection-start-line="114" selection-start-column="44" selection-end-line="114" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ML_Models/temp testing files/temp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ML_Models/Non parametric models/uniform_kernel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -702,13 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ML_Models/temp testing files/temp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="130" column="2" lean-forward="false" selection-start-line="130" selection-start-column="2" selection-end-line="130" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ML_Models/temp testing files/rdige_with_dummies.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="809">
@@ -734,9 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -744,57 +775,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="77" column="13" lean-forward="false" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Iterative models/Parametric models/testing_lasso.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="81" column="11" lean-forward="false" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Iterative models/Parametric models/Simple Linear/simpleLinear.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="25" column="59" lean-forward="false" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Parametric models/testing_lasso.py" />
+    <entry file="file://$PROJECT_DIR$/Iterative models/Parametric models/Simple Linear/simpleLinear.py" />
     <entry file="file://$PROJECT_DIR$/ML_Models/Parametric models/Simple Linear/SimpleLinearBestFeature.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-396">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Iterative models/Parametric models/Ridge/testing_ridge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Iterative models/Parametric models/Ridge/engineered_data_ridge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterative models/Parametric models/Ridge/testing_ridge.py" />
+    <entry file="file://$PROJECT_DIR$/Iterative models/Parametric models/Ridge/engineered_data_ridge.py" />
     <entry file="file://$PROJECT_DIR$/ML_Models/Parametric models/Ridge/ridge_area_rating.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -802,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -810,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -818,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,7 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -834,25 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding>
-            <element signature="e#1504#1664#0" expanded="false" />
-            <element signature="e#1711#1800#0" expanded="false" />
-            <element signature="e#1846#1934#0" expanded="false" />
-            <element signature="e#1986#2238#0" expanded="false" />
-            <element signature="e#1986#2162#1" expanded="false" />
-            <element signature="e#2274#2473#0" expanded="false" />
-            <element signature="e#2274#2367#1" expanded="false" />
-            <element signature="e#2406#2473#0" expanded="false" />
-            <element signature="e#2492#4068#0" expanded="false" />
-            <element signature="e#2492#2668#1" expanded="false" />
-            <element signature="e#2939#3126#0" expanded="false" />
-            <element signature="e#3173#3228#0" expanded="false" />
-            <element signature="e#3276#4065#0" expanded="false" />
-            <element signature="e#3276#3420#1" expanded="false" />
-            <element signature="e#3452#3730#0" expanded="false" />
-            <element signature="e#3757#4033#0" expanded="false" />
-            <element signature="e#4122#4918#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -860,7 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-139">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -868,7 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="58" lean-forward="false" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,37 +849,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#82#1" expanded="false" />
-            <element signature="e#376#1088#0" expanded="false" />
-            <element signature="e#389#829#0" expanded="false" />
-            <element signature="e#1128#1964#0" expanded="false" />
-            <element signature="e#1141#1581#0" expanded="false" />
-            <element signature="e#2007#2773#0" expanded="false" />
-            <element signature="e#2020#2488#0" expanded="false" />
-            <element signature="e#2823#4363#0" expanded="false" />
-            <element signature="e#2823#3363#1" expanded="false" />
-            <element signature="e#3427#3621#0" expanded="false" />
-            <element signature="e#3427#3555#1" expanded="false" />
-            <element signature="e#4407#4835#0" expanded="false" />
-            <element signature="e#4407#4638#1" expanded="false" />
-            <element signature="e#4643#4676#0" expanded="false" />
-            <element signature="e#4728#4789#0" expanded="false" />
-            <element signature="e#4879#5127#0" expanded="false" />
-            <element signature="e#4879#5005#1" expanded="false" />
-            <element signature="e#5168#5427#0" expanded="false" />
-            <element signature="e#5168#5314#1" expanded="false" />
-            <element signature="e#5504#5676#1" expanded="false" />
-            <element signature="e#5682#5724#0" expanded="false" />
-            <element signature="e#6000#6047#0" expanded="false" />
-            <element signature="e#6211#6260#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
+        <state relative-caret-position="686">
           <caret line="332" column="68" lean-forward="false" selection-start-line="332" selection-start-column="68" selection-end-line="332" selection-end-column="68" />
           <folding>
             <element signature="e#0#61#1" expanded="false" />
@@ -958,6 +906,32 @@
             <element signature="e#10181#10574#1" expanded="false" />
             <element signature="e#10658#10727#0" expanded="false" />
             <element signature="e#10844#11137#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML_Models/temp testing files/ideas.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML_Models/Parametric models/Ridge/ridge_zipcode_dummies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML_Models/temp testing files/temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="e#69#88#0" expanded="true" />
           </folding>
         </state>
       </provider>
