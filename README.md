@@ -1,3 +1,3 @@
-A learning exercise to explore different machine learning models for house prices in King County, Washington.
+A learning exercise to compare different machine regression models using house prices in King County, Washington.
 
-Models are evaulted by their r sqaured value on the test data set. 
+Models are evaluated by their r squared value on the test data set. 
