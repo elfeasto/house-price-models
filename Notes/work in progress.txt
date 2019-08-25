@@ -1,2 +1,2 @@
 Rewrite k_nn using new general_CFV function
-Rewrite other programs that use CFV with this new function
+Rewrite other scripts that use CFV with this new function
